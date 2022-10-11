@@ -3,7 +3,7 @@
 
 using namespace std::chrono;
 
-void test1(){
+void basic_test(){
     Setup test_setup = Setup();
     
     LiquidityProvider *lp1 = new LiquidityProvider("lp1"); 
@@ -58,7 +58,6 @@ void benchmark_slow(){
     UniswapPair* pool_b = test_setup.get_pool_b();
 
 
-    // cout<<pool_a->get_k()<<endl;
     auto start = high_resolution_clock::now();
     for (int i = 0; i < 10000;i++){
         int eth = rand()%20;
@@ -94,7 +93,7 @@ void benchmark_fast(){
 }
 
 int main(){
-    // test1();
+    basic_test();
     benchmark_slow();
     benchmark_fast();
     return 0;

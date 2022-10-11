@@ -13,4 +13,10 @@ Because there will be a maxima, we can find the maxima by checking mid and reduc
 We benchmark both methods in the other functions. After running them, we could see clearly that binary search is
 insanely fast.
 
-make all
+To build:
+
+make
+
+To run:
+
+./main

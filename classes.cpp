@@ -148,6 +148,9 @@ struct UniswapPair {
 struct Setup {
     public: 
         void initialize(bool f, bool fast){
+            //first argument is for verbosity
+            //second one is for whether to run the slow version or fast version
+
             pool_a = new UniswapPair(Tokens("ethereum","ETH",100),Tokens("dai","DAI",100000));
             pool_b = new UniswapPair(Tokens("ethereum","ETH",150),Tokens("dai","DAI",120000));
             flag = f;
