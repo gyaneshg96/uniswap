@@ -1,0 +1,16 @@
+Below is the implementation of a uniswap, with functions such as 
+adding, retrieving/deleting by liquidity providers, and swapping
+
+We have 2 pools and so we look for arbitrage opportunities, whenever there is possible
+Then we calculate the maximum profit to make, using ETH
+
+There are 3 functions: The first function runs the basic test. The other 2 are benchmark functions
+
+To calculate the maximum profit, we have 2 ways. One way would be to iteratively check for ETH
+which would give max profit. The other would be to do something similar to a binary search on the values. 
+Because there will be a maxima, we can find the maxima by checking mid and reducing search space by half.
+
+We benchmark both methods in the other functions. After running them, we could see clearly that binary search is
+insanely fast.
+
+make all
